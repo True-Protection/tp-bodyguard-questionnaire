@@ -1,0 +1,200 @@
+<!doctype html>
+<html ng-app="app">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- wp_head begin -->
+    <title>Partner Registration &#8211; True Protection</title>
+    <link rel='stylesheet' id='dashicons-css'  href='https://dev.trueprotection.co.th/wp-includes/css/dashicons.min.css?ver=6.0.1' media='all' />
+    <link rel='stylesheet' id='cookie-law-info-css'  href='https://dev.trueprotection.co.th/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-public.css?ver=2.1.2' media='all' />
+    <link rel='stylesheet' id='cookie-law-info-gdpr-css'  href='https://dev.trueprotection.co.th/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-gdpr.css?ver=2.1.2' media='all' />
+    <link rel='stylesheet' id='bootstrap-css'  href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css?ver=6.0.1' media='all' />
+    <link rel='stylesheet' id='jquery-ui-css'  href='https://dev.trueprotection.co.th/wp-content/themes/picostrap5-child-base/custom/datepicker/datepicker-ui.css?ver=6.0.1' media='all' />
+    <link rel='stylesheet' id='picostrap-styles-css'  href='https://dev.trueprotection.co.th/wp-content/themes/picostrap5-child-base/css-output/bundle.css?ver=1738' media='all' />
+    <link rel='stylesheet' id='font-awesome-official-css'  href='https://use.fontawesome.com/releases/v5.15.4/css/all.css' media='all' integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel='stylesheet' id='custom-css'  href='https://dev.trueprotection.co.th/wp-content/themes/picostrap5-child-base/style.css?v=1660103353' media='all' />
+    <link rel='stylesheet' id='font-awesome-official-v4shim-css'  href='https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css' media='all' integrity="sha384-Vq76wejb3QJM4nDatBa5rUOve+9gkegsjCebvV/9fvXlGWo4HCMR4cJZjjcF6Viv" crossorigin="anonymous" />
+    <link rel='stylesheet' href='assets/css/custom.css' media='all' />
+    <link rel='stylesheet' href='assets/css/intlTelInput.css' media='all' />
+    <link rel='stylesheet' id='font-awesome-official-css'  href='https://use.fontawesome.com/releases/v5.15.4/css/all.css' media='all' integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  </head>
+  <body>
+    <header id="header-template"></header>
+    <main id='theme-main'>
+
+        <section>
+            <div class="header-hero header-transparency py-5 wp-image-357 text-white" style="background:url(http://dev.trueprotection.co.th/wp-content/uploads/2022/05/Slider-BG-1-Guard.webp)  center / cover no-repeat;" lc-helper="background">
+                <div class="container pb-5 mt-5">
+                    <div class="lc-block">
+                        <div editable="rich">
+                            <h1 class="fs-4 text-uppercase">Bodyguard Questionnaire</h1>
+                            <ol class="breadcrumb text-uppercase fs-8">
+                                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Bodyguard Questionnaire</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <main class="bg-light">
+            <div class="container pt-4 pb-4">
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-md-10 text-center p-0 mt-3 mb-2">
+                            <div class="px-0 pt-4 pb-0 mt-3 mb-3">
+                                <!-- <h2 id="heading"> QUESTIONNAIRE</h2>
+                                <p>Fill all form field to go to next step</p> -->
+                                <form name="msform" id="msform" action="" method="post" enctype="multipart/form-data">
+                                    <ul id="progressbar">
+                                        <li class="active" id="appointment">Meeting Appointment</li>
+                                        <li class="" id="destination">Destination</li>
+                                        <li class="" id="client">Client</li>
+                                        <li class="" id="mission">Mission</li>
+                                        <li class="" id="bodyguard">Bodyguard</li>
+                                        <li class="" id="transportation">Transportation</li>
+                                        <li class="" id="summary">Summary</li>
+                                        <li class="" id="quotation">Quotation</li>
+                                        <li class="" id="payment">Payment</li>
+                                        <li id="success">Success</li>
+                                    </ul>
+                                    <style>
+                                        #progressbar li {
+                                            width: 11%;
+                                        }
+                                        #progressbar li:first-child {
+                                            width: 12%;
+                                        }
+                                    </style>
+
+                                    <!--- Step 1 --->
+                                    <fieldset id="appointment">
+                                        <div class="form-card form-box">
+                                            <h1 class="step-title text-bold text-primary fs-4 mb-5 mt-4"> Meeting Appointment </h1>
+                                            <div class="row mb-4">
+                                                <div class="col-md-12">
+                                                    <h5 class="text-bold text-uppercase fs-8 mb-4">Duration</h5>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <div class="input-group align-items-center">
+                                                        <input name="start_date" type="text" id="start_date" class="form-control" validates="required" required="">
+                                                        <label for="start_date">Start Date</label>
+                                                        <i class="validate"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <div class="input-group align-items-center">
+                                                        <input name="end_date" type="text" id="end_date" class="form-control" validates="required" required="">
+                                                        <label for="end_date">End Date</label>
+                                                        <i class="validate"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix mt-3"></div>
+                                                <div class="col-md-12">
+                                                    <h5 class="text-bold text-uppercase fs-8 mb-4">Meeting Location</h5>
+                                                </div>
+                                                <div class="col-md-12 mb-3">
+                                                    <div class="input-group align-items-center">
+                                                        <input name="address" type="text" id="address" class="form-control" validates="required" required="">
+                                                        <label for="address">Address</label>
+                                                        <i class="validate"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 mb-3 local-address">
+                                                    <div class="f-province input-group align-items-center provinces selectbox custom">
+                                                        <input type="hidden" name="province" value="">
+                                                        <select id="province" class="form-control">
+                                                            <option> -- Select -- </option>
+                                                        </select>
+                                                        <label for="province">Province</label>
+                                                        <i class="validate"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 mb-3 local-address">
+                                                    <div class="input-group align-items-center selectbox custom">
+                                                        <input type="hidden" name="district" value="">
+                                                        <select id="district" class="form-control">
+                                                        </select>
+                                                        <label for="district">District</label>
+                                                        <i class="validate"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 mb-3">
+                                                    <div class="zip_code input-group align-items-center">
+                                                        <input name="zip_code" type="text" id="zip_code" class="form-control" validates="required" required="">
+                                                        <label for="zip_code">Zip Code</label>
+                                                        <i class="validate"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="pb-3" lc-helper="gmap-embed">
+                                                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3875.6647443463908!2d100.5592540929188!3d13.73873605017498!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x524dad67eb707a4b!2sThe%20Trendy%20Office%20Building!5e0!3m2!1sen!2sth!4v1646302645610!5m2!1sen!2sth" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix mt-3"></div>
+                                                <div class="col-md-12">
+                                                    <h5 class="text-bold text-uppercase fs-8 mb-4">Meeting Time</h5>
+                                                </div>
+                                                <div class="col-md-12 mb-3">
+                                                    <div class="input-group align-items-center">
+                                                        <input name="address" type="time" id="address" class="form-control" validates="required" required="">
+                                                        <label for="address">Time</label>
+                                                        <i class="validate"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <input type="button" id="next_step_1" name="next" class="btn next action-button" value="Next">
+                                    </fieldset>
+
+                                    <!--- Step 2 --->
+                                    <fieldset id="destination">
+                                        <div class="form-card form-box">
+                                            <h1 class="step-title text-bold text-primary fs-4 mb-5 mt-4"> Are we going to Travel to other places</h1>
+                                            <div class="row choose-box">
+												<div class="col-md-12 mb-3">
+													<ul>
+														<li class="col-md-6">
+															<label>
+																<input type="radio" name="type" value="no" required="required">
+																<div class="icon-box">
+																	<h5>No, I would like to go around assigned location.</h5>
+																</div>
+															</label>
+														</li>
+														<li class="col-md-6">
+															<label>
+																<input type="radio" name="type" value="yes" required="required">
+																<div class="icon-box">
+																	<h5>Yes, I would like to go to other locations. </h5>
+																</div>
+															</label>
+														</li>
+													</ul>
+												</div>
+											</div>
+                                        </div>
+
+                                        <input type="button" name="next" class="btn next action-button step2_btn_position" value="Next">
+                                        <input type="button" name="previous" class="btn previous action-button-previous step2_btn_position" value="Previous">
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </main>
+    <footer id="footer-template"></footer>
+    <script src="assets/js/angular.min.js"></script>
+    <script src="components.js"></script>
+    <script src="app.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/intlTelInput.js"></script>
+    <script src="assets/js/validate.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>

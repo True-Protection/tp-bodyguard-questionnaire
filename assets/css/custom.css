@@ -1,0 +1,1297 @@
+.f-phone{
+	position: relative;
+}
+.f-phone .error-text{
+	bottom: -18px;
+}
+.iti{
+	width: 100%;
+}
+::-webkit-input-placeholder { /* Edge */
+ font-size: 11px !important;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ font-size: 11px !important;
+}
+::placeholder {
+ font-size: 11px !important;
+}
+.one-segment-3 {
+	float: left;
+	width: 33.3333%;
+	display: inline-flex !important
+		
+}
+.iti--separate-dial-code .iti__selected-flag {
+	float: inherit !important;
+}
+
+#ui-datepicker-div{
+	z-index: 999999 !important;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{
+	background-color: #2090c1 !important;
+}
+input[type="tel"]::-webkit-input-placeholder { /* Edge */
+    font-size: 12px;
+    color: #a1a1a1 !important;
+	opacity: 1 !important;
+}
+
+input[type="tel"]:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-size: 12px;
+    color: #a1a1a1 !important;
+	opacity: 1 !important;
+}
+
+input[type="tel"]::placeholder {
+    font-size: 12px;
+    color: #a1a1a1 !important;
+	opacity: 1 !important;
+}
+
+h5{
+	font-weight: bold;
+	color: #18255a !important;
+}
+#heading {
+    text-transform: uppercase;
+    color: #18255a;
+    font-weight: normal
+}
+
+#msform {
+    text-align: center;
+    position: relative;
+    margin-top: 20px
+}
+
+#msform fieldset {
+    background: transparent;
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+    position: relative
+}
+
+.form-card {
+    text-align: left
+}
+
+
+.form-box .input-group label{
+	color: #a0a0a0;
+    top: 15px;
+    left: 15px;
+    margin: 0;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.0em;
+    transition: all 0.3s;
+    z-index: 100;
+    background: transparent;
+}
+
+.form-box .input-group input:focus ~ label,
+.form-box .input-group input:valid ~ label,
+.form-box .input-group select:focus ~ label,
+.form-box .input-group select:valid ~ label,
+.form-box .input-group textarea:focus ~ label,
+.form-box .input-group textarea:valid ~ label{
+	top: 0px !important;
+}
+
+.form-box .input-group input.not-require ~ label,
+.form-box .input-group select.not-require ~ label,
+.form-box .input-group textarea.not-require ~ label{
+	top: 15px !important;
+}
+
+.form-box .input-group input.not-require.active-text ~ label,
+.form-box .input-group select.not-require.active-text ~ label,
+.form-box .input-group textarea.not-require.active-text ~ label,
+.form-box .input-group input.not-require:focus ~ label,
+.form-box .input-group select.not-require:focus ~ label,
+.form-box .input-group textarea.not-require:focus ~ label{
+	top: 0px !important;
+}
+
+#msform fieldset:not(:first-of-type) {
+    display: none
+}
+
+#msform input,
+#msform textarea,
+#msform select{
+	padding: 17px 15px 8px 15px;
+    border: 1px solid #eaeaea !important;
+    border-radius: 10px !important;
+    width: 100%;
+    box-sizing: border-box;
+    color: #18255a;
+    background-color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 0;
+    min-height: 50px;
+    text-transform: capitalize;
+}
+
+#msform input:focus,
+#msform textarea:focus,
+#msform select:focus{
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #8ebaff !important;
+    outline-width: 0;
+	box-shadow: 0px 0px 3px rgb(0 0 0 / 5%);
+}
+
+#msform input[type="checkbox"] {
+		background: transparent;
+	  padding: 0;
+	  height: initial;
+	  width: initial;
+	  margin-bottom: 0;
+	  display: none;
+	  cursor: pointer;
+}
+
+/* Checkbox */
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.form-group {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  position: relative;
+  cursor: pointer;
+}
+
+.form-group label:before {
+  content:'';
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #0079bf;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.form-group input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid #0079bf;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+#msform .action-button {
+    width: 100px;
+    background: #2090c2;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 0px 10px 5px;
+    float: right;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+}
+
+#msform .action-button:hover,
+#msform .action-button:focus {
+    background-color: #fec106;
+}
+
+#msform .action-button-previous {
+    width: 100px;
+    background: #616161;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px 10px 0px;
+    float: right;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+}
+
+#msform .action-button-previous:hover,
+#msform .action-button-previous:focus {
+    background-color: #fec106;
+}
+
+.card {
+    z-index: 0;
+    border: none;
+    position: relative
+}
+
+.fs-title {
+    font-size: 25px;
+    color: #18255a;
+    margin-bottom: 15px;
+    font-weight: normal;
+    text-align: left
+}
+
+.purple-text {
+    color: #18255a;
+    font-weight: normal
+}
+
+.steps {
+    font-size: 25px;
+    color: gray;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-align: right
+}
+
+.fieldlabels {
+    color: gray;
+    text-align: left
+}
+
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: lightgrey;
+    padding: 20px 0;
+}
+
+#progressbar .active {
+    color: #ffc105;
+}
+#progressbar li {
+    list-style-type: none;
+    font-size: 12px;
+    float: left;
+    position: relative;
+    font-weight: normal !important;
+    text-transform: uppercase;
+}
+#progressbar li.width3{
+	width: 33.3333% !important;
+}
+#progressbar li.width4{
+	width: 25% !important;
+}
+#progressbar li.width2{
+	width: 50% !important;
+}
+#progressbar li:last-child{
+	display: none !important;
+}
+/* #progressbar li::before{
+    font-size: 25px !important;
+} */
+/* #progressbar #categories:before {
+	content: "\f164";
+	-webkit-font-smoothing: antialiased;
+	font-family: 'dashicons';
+}
+#progressbar #account:before {
+	content: "\f12e";
+	-webkit-font-smoothing: antialiased;
+	font-family: 'dashicons';
+}
+#progressbar #personal:before {
+	content: "\f466";
+	-webkit-font-smoothing: antialiased;
+	font-family: 'dashicons';
+}
+
+#progressbar #agreement:before {
+content: "\f15e";
+	-webkit-font-smoothing: antialiased;
+	font-family: 'dashicons';
+}
+
+#progressbar #success:before {
+content: "\f15e";
+	-webkit-font-smoothing: antialiased;
+	font-family: 'dashicons';
+} */
+
+#progressbar li::before {
+	content: "";
+    width: 20px;
+    height: 20px;
+    line-height: 15px;
+    display: block;
+    font-size: 20px;
+    color: #ffffff;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px;
+	position: absolute;
+	top: 20px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+#progressbar li::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    z-index: 0;
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #fec106;
+    color: #18255a;
+}
+
+.progress {
+    height: 10px
+}
+
+.progress-bar {
+    background-color: #2090c2;
+}
+
+.fit-image {
+    width: 100%;
+    object-fit: cover
+}
+
+/* 
+    Display Error
+    --------------------------------------
+*/
+
+.error-text {
+    position: absolute;
+    bottom: -18px;
+    font-size: 11px;
+    padding: 0 10px;
+    color: #ff8f8f;
+    font-weight: 400;
+    border-radius: 15px;
+    line-height: 20px;
+    right: -2px;
+}
+
+.form-box .input-group input,
+.form-box .input-group select,
+.form-box textarea {
+    position: relative;
+    left: -1px;
+    border-radius: 7px !important;
+}
+
+.form-box .input-group label {
+    position: absolute !important;
+}
+
+.form-box .input-group i.validate::after {
+    content: "";
+    position: absolute;
+    right: 5px;
+    top: 6px;
+    border-radius: 50%;
+    font-size: 22px;
+    text-align: center;
+    display: none;
+    font-style: normal !important;
+}
+
+.form-box .input-group .valid-pass~i.validate::after {
+    content: "\f147";
+	-webkit-font-smoothing: antialiased;
+	font-family: 'dashicons';
+    color: #8fbd8f;
+}
+
+.form-box .input-group .valid-error~i.validate::after {
+    content: "\f158";
+	-webkit-font-smoothing: antialiased;
+	font-family: 'dashicons';
+    color: red;
+}
+
+.form-box .input-group .valid-pass~i.validate::after,
+.form-box .input-group .valid-error~i.validate::after {
+    display: block;
+}
+
+.form-box .input-group .valid-pass~label {
+    color: #8fbd8f !important;
+}
+
+.form-box .input-group .valid-pass {
+    border-left: solid 3px #8fbd8f;
+    /* color: #8fbd8f !important; */
+}
+
+.form-box .input-group .valid-error~label {
+    color: red !important;
+}
+
+.form-box .input-group .valid-error~label::before {
+    content: "\f534";
+    -webkit-font-smoothing: antialiased;
+    font-family: 'dashicons';
+    color: #fec106;
+    margin-right: 5px;
+    font-size: 12.5px;
+    position: absolute;
+    top: 0;
+    left: -14px;
+	display: none;
+}
+
+.form-box .input-group .valid-error {
+    border-left: solid 3px red;
+    /* color: red !important; */
+}
+
+.form-box .input-group.selectbox::after {
+    content: "\f347";
+	-webkit-font-smoothing: antialiased;
+	font-family: 'dashicons';
+    position: absolute;
+    right: 5px;
+    top: 12px;
+}
+.form-box .selectbox{
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 10px;
+    /* border: solid 1px #eaeaea; */
+}
+.form-box .selectbox [data-cuteselect-title]{
+	color: #18255a !important;
+	font-size: 14px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	line-height: 45px;
+	padding: 7px 12px 0 12px;
+    border-radius: 10px;
+}
+.form-box .selectbox:hover,
+.form-box .selectbox [data-cuteselect-title]:hover{
+	border: solid 1px #eaeaea;
+	background: #edf7ff;
+}
+.form-box .selectbox [data-cuteselect-title]{
+	border-right: solid 1px #eaeaea !important;
+	border-left: solid 1px #eaeaea !important;
+}
+.form-box .selectbox div{
+	border: none !important;
+}
+.form-box .selectbox label{
+	top: 0 !important;	
+}
+
+/* 
+    Choose Box
+    --------------------------------------
+*/
+
+.choose-box ul {
+        position: relative;
+        display: block;
+        width: 100%;
+		padding: 20px;
+		border-radius: 20px;
+        background: #ededf5;
+         
+}
+.choose-box ul li {
+        position: relative;
+        list-style: none;
+        text-align: left;
+        margin: 1.4%;
+		display: inline-block;
+		width: 47%;
+}
+@media (max-width: 600px) {
+	.choose-box ul li {
+		width: 100%;
+	}
+}
+.choose-box ul li.square {
+	width: auto;
+}
+.choose-box ul li label {
+        position: relative;
+		width: 100%;
+}
+
+.choose-box ul li label input[type= "checkbox"],
+.choose-box ul li label input[type= "radio"] {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+}
+.choose-box ul li label .icon-box {
+        width: 100%;
+        height: 100px;
+        background: #ebf5fc;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        cursor: pointer;
+		position: relative;
+		overflow: hidden;
+		border: solid 2px #ebf5fc;
+		background: rgb(19,31,68);
+		background: linear-gradient(149deg, rgba(19,31,68,1) 0%, rgba(15,119,153,1) 100%);
+}
+/* .choose-box ul li label .icon-box::after {
+    content: "\f159";
+	-webkit-font-smoothing: antialiased;
+	font-family: 'dashicons';
+    position: absolute;
+    left: 10px;
+    top: 5px;
+	z-index: 10;
+	font-size: 25px;
+	color: #fff;
+} */
+.choose-box ul li.square label .icon-box {
+	width: 200px;
+	height: 200px;
+}
+.choose-box ul li label .icon-box .img-bg,
+.choose-box ul li label .icon-box .img-bg::after,
+.choose-box ul li label .icon-box h5,
+.choose-box ul li label .icon-box h5::after{
+	position: absolute;	
+}
+.choose-box ul li label .icon-box .img-bg{
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: center center no-repeat;
+	background-size: cover;
+	cursor: pointer !important;
+}
+.choose-box ul li label .icon-box .img-bg::after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgb(19,31,68);
+	background: linear-gradient(149deg, rgba(19,31,68,1) 0%, rgba(15,119,153,1) 100%);
+	opacity: 0.6;
+	z-index: 4;
+}
+.choose-box ul li label .icon-box h5 {
+	z-index: 10;
+	color: #fff !important;
+	font-size: 13px;
+	letter-spacing: 0.03em;
+	height: 28px;
+	bottom: 40px;
+	padding: 20px;
+	margin: auto;
+    width: 100%;
+    text-align: center;
+}
+.choose-box ul li label .icon-box h5::after{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #ffc007;
+    margin: 10px auto 0 auto;
+    position: relative;
+}
+.choose-box ul li label .icon-box .icon::after{
+    content: "";
+	-webkit-font-smoothing: antialiased;
+    position: absolute;
+	left: 12px;
+	bottom: 60px;
+	font-size: 50px;
+	color: #fff;
+}
+.choose-box ul li label input[type= "checkbox"]:checked ~ .icon-box,
+.choose-box ul li label input[type= "radio"]:checked ~ .icon-box {
+	box-shadow: -2px -2px 5px rgba(255, 255, 255, 1),
+                     3px 3px 5px rgba(0, 0, 0, .1);
+					 border: solid 2px #ffc007;
+}
+/* .choose-box ul li label input[type= "checkbox"]:checked ~ .icon-box::after,
+.choose-box ul li label input[type= "radio"]:checked ~ .icon-box::after {
+	color: #ffc007;
+	content: "\f12a";
+} */
+
+
+/* 
+    Term Box
+    --------------------------------------
+*/
+
+.content-view {
+    padding: 50px;
+    border: 1.5px solid #ededed;
+    border-radius: 10px;
+}
+.terms-box {
+    background: #f8f9ff;
+    padding: 10px 20px !important;
+    font-size: 13px;
+    border: solid 1px #e3e3e3;
+    height: 600px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.terms-box h5 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000 !important;
+}
+
+/* width */
+.terms-box::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+.terms-box::-webkit-scrollbar-track {
+  box-shadow: none;
+  background: #f4f4f4;
+  border-radius: 10px;
+}
+
+/* Handle */
+.terms-box::-webkit-scrollbar-thumb {
+  background: #18255a;
+  border-radius: 10px;
+}
+
+/* 
+    Varification
+    --------------------------------------
+*/
+.otp-msg-wrapper {
+    padding: 30px 20px;
+    border: solid 1px #e1e1e1;
+    background: #fff;
+    border-radius: 10px;
+    width: 100%;
+}
+/*.otp-msg-wrapper p {*/
+/*	color: #dedede;*/
+/*}*/
+.otp-msg-wrapper h6 {
+	color: #18255a !important;	
+}
+.verification-code {
+	width: 100%;
+}
+.verification-code--inputs input[type=text] {
+    border: 2px solid #3f4d89 !important;
+    width: 46px !important;
+    height: 46px;
+    /* padding: 5px 10px !important; */
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box !important;
+    color: #18255a !important;
+    line-height: 14px;
+    font-size: 20px !important;
+}
+.verification-code--inputs input[type=text]:valid {
+	border: 2px solid #18255a !important;
+}
+@media (max-width: 768px) {
+	.content-view {
+		padding: 25px 15px;
+	}
+}
+
+.loading{
+	color: #ffc007;
+}
+.loader {
+  border: 3px solid #ffc007;
+  border-radius: 50%;
+  border-top: 3px solid transparent;
+  width: 25px;
+  height: 25px;
+  margin: 0 10px 0 0;
+  -webkit-animation: spin 1s linear infinite; /* Safari */
+  animation: spin 1s linear infinite;
+  display: inline-block;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading, .success, .error {
+	display: none;
+}
+.success, .error {
+	color: #18255a;
+	font-size: 14px;
+	font-family: Arial;
+	letter-spacing: 0.02em;
+}
+.success::before {
+    content: "\f12a";
+    font-family: dashicons;
+    margin-right: 5px;
+    font-size: 25px;
+    color: green;
+    position: relative;
+    top: 7px;
+}
+.error::before {
+    content: "\f534";
+    font-family: dashicons;
+    margin-right: 5px;
+    font-size: 25px;
+    color: red;
+    position: relative;
+    top: 7px;
+}
+
+
+/* --------------------------------------------------
+	Custom Support - Registration Form
+-------------------------------------------------- */
+
+.registration{
+  background: url(../images/registration-footer-bg.png) bottom center no-repeat;
+  background-size: auto;
+}
+.registration-form{
+  display: grid;
+  width: 100%;
+  height: auto;
+  padding: 70px 0 100px 0;
+  box-shadow: 0px -30px 30px rgba(0,0,0,0.2);
+  z-index: 100;
+  margin: -150px 0 0 0;
+  background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%);
+}
+.registration-form .title{
+  position: relative;
+  font-size: 15px;
+  letter-spacing: 0.03em;
+}
+.registration-form .title::before{
+  content: "";
+  display: block;
+  width: 5px;
+  height: 16px;
+  background-color: #29cd38;
+  float: left;
+  margin-right: 10px;
+  border-radius: 2px;
+}
+.registration-form hr{
+  border-color: #f1f1f1;
+  background: none;
+}
+.registration-form header p{
+  font-size: 12px;
+}
+
+.registration-form ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: capitalize;
+  letter-spacing: 0.03em;
+  font-weight: 400 !important;
+  opacity: 1; /* Firefox */
+  font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+  color: #121212;
+}
+
+.registration-form :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: capitalize;
+  letter-spacing: 0.03em;
+  font-weight: 400 !important;
+  font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+  color: #121212;
+}
+
+.registration-form ::-ms-input-placeholder { /* Microsoft Edge */
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: capitalize;
+  letter-spacing: 0.03em;
+  font-weight: 400 !important;
+  font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+  color: #121212;
+}
+.registration-form select{
+  position: relative;
+  font-size: 11px;
+  line-height: 11px;
+  margin: 0;
+  padding: 0 15px;
+  letter-spacing: 0.02em;
+  color: #333;
+  background: transparent;
+  font-weight: 500;
+  z-index: 5;
+}
+.select-wrapper select{
+  -webkit-appearance:none;
+  font-size: 11px !important;
+}
+.select-wrapper select option {
+  font-size: 14px !important;
+  font-weight: normal !important;
+}
+.select-wrapper label.select-label{
+  margin-left: -15px !important;
+}
+.registration-form .select-wrapper::after,
+.select-selected:after{
+  content: "\f078";
+  font-family: FontAwesome;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  border-left: 1px solid #ccc;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+  padding-top: 9px;
+  font-size: 14px;
+  color: #c1c1c1;
+  z-index: 1;
+}
+.registration-form select:hover + .select-wrapper::after{
+  color: #000;
+}
+/*the container must be positioned relative:*/
+
+.custom-select {
+  display: inline-block;
+  font: 13px/1.5 "Roboto", sans-serif;
+  width: 100%;
+  position: relative;
+  z-index: 400;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  position: relative;
+  z-index: 410;
+  background-color: transparent;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "\f078";
+  font-family: FontAwesome;
+  top: 0;
+  right: 0;
+  z-index: 412;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+/*style the items (options), including the selected item:*/
+.select-items div, .select-selected {
+  color: #9e9e9e;
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  user-select: none;
+  font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 11px;
+  height: 40px;
+  vertical-align: middle;
+  line-height: 22px;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #fff;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 450;
+  box-shadow: 0 10px 25px rgb(0 0 0 / 20%);
+  max-height: 400px;
+  overflow-x: auto;
+}
+.custom-select ~ label.select-label,
+.custom-select.active ~ label.select-label,
+.custom-select.valid ~ label.select-label{
+  background: #fff;
+  color: #36c37c;
+  top: -5px;
+  z-index: 500;
+}
+.custom-select:active ~ label.select-label,
+.custom-select.active ~ label.select-label,
+.custom-select.active,
+.custom-select .select-selected.select-arrow-active + .select-items{
+  z-index: 3000;
+}
+.custom-select.valid .select-selected{
+  border-color: #36c37c;
+  color: #1a1a1a;
+}
+.select-items div{
+  border: 1px solid #f1f1f1;
+  z-index: 440;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: #36c37c;
+  border-color: #36c37c !important;
+  color: #fff !important;
+}
+.registration-form .form-group label{
+  font-size: 11px;
+  line-height: 10px;
+  margin: 0;
+  padding: 0;
+  text-transform: inherit;
+  letter-spacing: 0.02em;
+  color: #333;
+  position: relative;
+  top: 0;
+  vertical-align: top;
+}
+.registration-form .form-item{
+  position: relative;
+  display: flow-root;
+}
+.registration-form .form-item label{
+  position: absolute;
+  cursor: text;
+  z-index: 111;
+  top: 14px;
+  left: 27px;
+  background: transparent;
+  padding: 0 2px;
+  color: #9a9a9a;
+  transition: all .3s ease;
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: initial;
+  letter-spacing: 0.03em;
+  font-weight: 400 !important;
+}
+.registration-form .form-item span{
+  float: right;
+}
+/* .registration-form .form-item label::before{
+  content: "Enter ";
+} */
+.registration-form  .form-item select:focus ~ label,
+.registration-form  .form-item select:valid ~ label,
+.registration-form  .form-item textarea:focus ~ label,
+.registration-form  .form-item textarea:valid ~ label,
+.registration-form  .form-item input:focus ~ label,
+.registration-form  .form-item input:valid ~ label{
+  font-size: 10px;
+  top: -5px;
+  background: #fff;
+  color: #34C47C;
+}
+.registration-form  .form-item input:focus ~ label,
+.registration-form  .form-item input:hover ~ label{
+  color: #34C47C;
+}
+.registration-form  select:valid,
+.registration-form  input:valid,
+.registration-form  textarea:valid,
+.registration-form  .form-item input:valid{
+  color: #121212;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+  border-color: #34C47C;
+}
+.registration-form  textarea{
+  padding: 15px;
+}
+.registration-form .form-item.padding-0 label{
+  left: 14px;
+}
+.registration-form  .form-item input:valid + label::before{
+  content: "";
+}
+.registration-form .custom-accordion{
+  padding: 0 20px;
+}
+.registration-form .custom-accordion .card{
+  background: transparent !important;
+}
+.registration-form .custom-accordion .card h1,
+.registration-form .custom-accordion .card h2,
+.registration-form .custom-accordion .card h3,
+.registration-form h3.section-title{
+  background-color: transparent;
+  border-radius: 10px;
+  color: #36c37c;
+  transition: all 0.3s;
+  border-radius: 0;
+  border-bottom: solid 1px #36c37c;
+  padding: 15px 40px 15px 0;
+  font-size: 15px !important;
+  text-transform: inherit !important;
+  letter-spacing: 0em;
+}
+
+.registration-form .custom-accordion .card h1.collapsed,
+.registration-form .custom-accordion .card h2.collapsed,
+.registration-form .custom-accordion .card h3.collapsed{
+  color: #121212;
+  border-bottom: solid 1px #f1f1f1;
+}
+
+.custom-accordion .card h1::after,
+.custom-accordion .card h2::after,
+.custom-accordion .card h3::after{
+  border-color: #36c37c;
+  color: #36c37c;
+}
+
+.custom-accordion .card h1.collapsed::after,
+.custom-accordion .card h2.collapsed::after,
+.custom-accordion .card h3.collapsed::after{
+  border-color: #d2d2d2;
+  color: #d2d2d2;
+}
+
+.registration-form .custom-accordion .card .card-body{
+  border-top: none;
+}
+
+.registration-form .map-field{
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.registration-form .map-field input{
+  position: relative;
+  z-index: 5;
+}
+.registration-form .icon-mappin{
+  content: "";
+  display: block;
+  position: absolute;
+  right: 22px;
+  top: 35px;
+  margin: auto 0;
+  width: 18px;
+  height: 18px;
+  background: url(../images/icon/icon-mappin.svg) center center no-repeat;
+  background-size: 100%;
+  z-index: 10;
+  transition: all 0.2s;
+}
+.registration-form .map-field .icon-mappin:active{
+  opacity: 0.7;
+}
+.registration-form .map-field .glyphicon{
+  display: none;
+}
+.registration-form .map-field input[type="text"]{
+  padding-right: 40px;
+}
+.registration-form .input-group.border-solid{
+  border: 1px solid #ddd;
+}
+.registration-form .input-group-addon{
+  background: transparent;
+  font-size: 12px;
+  color: #afafaf;
+  border: none !important;
+  background: #f5f5f5;
+}
+.registration-form .input-group input{
+  border: none;
+}
+.registration-form .dragdrop-image-field{
+  height: 120px;
+  margin-top: -7px;
+}
+
+.registration-form .dragdrop-image-field::after,
+.registration-form .dragdrop-image-field::before{
+  display: block;
+  text-align: center;
+  padding-top: 0;
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  margin: auto;
+  z-index: 3;
+}
+.registration-form .dragdrop-image-field::before{
+  content: "\f382";
+  font-family: FontAwesome;
+  font-size: 25px;
+  top: -25px;
+}
+.registration-form .dragdrop-image-field::after{
+  width: 98%;
+  height: 95%;
+  padding-top: 55px;
+  font-size: 12px;
+}
+.registration-form .dragdrop-image-field::after,
+.registration-form .dragdrop-image-field::before{
+  color: #ddd;
+}
+.placepicker-map {
+  width: 100%;
+  height: 300px;
+}
+.another-map-class {
+  width: 100%;
+  height: 300px;
+}
+.pac-container {
+  border-radius: 5px;
+}
+.registration-form #btn-next-step,
+.registration-form #btn-submit{
+  width: 130px;
+  border: none;
+  outline: 0;
+  font-size: 12px;
+  padding: 8px 0;
+  text-align: center;
+}
+.registration-form #btn-submit{
+  background: #AE2424;
+  color: #fff;
+}
+.registration-form span.calendar-icon{
+  width: 100%;
+  display: block;
+}
+.registration-form span.calendar-icon,
+.registration-form span.calendar-icon input,
+.registration-form span.calendar-icon select{
+  position: relative;
+  z-index: 10;
+}
+.registration-form span.calendar-icon::after{
+  content: "\f073";
+  font-family: FontAwesome;
+  display: block;
+  position: absolute;
+  right: 7px;
+  top: 8px;
+  z-index: 15;
+  font-size: 18px;
+  color: #34c47c;
+}
+
+
+.chkbox-button {
+   overflow:auto;
+}
+.chkbox-button label {
+   text-align:center;
+   display:block;
+   width: 150px;
+    padding: 7px 0;
+    border: solid 2px #1a1a1a;
+    background: transparent;
+    margin: 5px auto 0 auto;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.chkbox-button input {
+   visibility: hidden;
+}
+.chkbox-button input:checked + label {
+   background-color: #38c17c;
+   border-color: #38c17c;
+   color: #fff;
+   box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+}
+
+.verification-code--inputs input[type=text]{
+	padding: inherit !important;
+}
+main.hide{
+	display: none;
+}
+.form-control{
+	min-height: 48px;
+	position: relative;
+	border: 1px solid #eaeaea !important;
+}

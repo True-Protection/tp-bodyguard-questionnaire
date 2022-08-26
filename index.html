@@ -9,6 +9,8 @@
     <link rel='stylesheet' id='dashicons-css'  href='https://dev.trueprotection.co.th/wp-includes/css/dashicons.min.css?ver=6.0.1' media='all' />
     <link rel='stylesheet' id='cookie-law-info-css'  href='https://dev.trueprotection.co.th/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-public.css?ver=2.1.2' media='all' />
     <link rel='stylesheet' id='cookie-law-info-gdpr-css'  href='https://dev.trueprotection.co.th/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-gdpr.css?ver=2.1.2' media='all' />
+    <link rel='stylesheet' id='bootstrap-css'  href='assets/css/classic.css' />
+    <link rel='stylesheet' id='bootstrap-css'  href='assets/css/classic.date.css' />
     <link rel='stylesheet' id='bootstrap-css'  href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css?ver=6.0.1' media='all' />
     <link rel='stylesheet' id='jquery-ui-css'  href='https://dev.trueprotection.co.th/wp-content/themes/picostrap5-child-base/custom/datepicker/datepicker-ui.css?ver=6.0.1' media='all' />
     <link rel='stylesheet' id='picostrap-styles-css'  href='https://dev.trueprotection.co.th/wp-content/themes/picostrap5-child-base/css-output/bundle.css?ver=1738' media='all' />
@@ -29,7 +31,7 @@
                     <div class="lc-block">
                         <div editable="rich">
                             <h1 class="fs-4 text-uppercase">Bodyguard Questionnaire</h1>
-                            <ol class="breadcrumb text-uppercase fs-8">
+                            <ol class="breadcrumb text-uppercase fs-6 text-dark">
                                 <li class="breadcrumb-item"><a href="/">Home</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">Bodyguard Questionnaire</li>
                             </ol>
@@ -71,20 +73,22 @@
                                     <!--- Step 1 --->
                                     <fieldset id="appointment">
                                         <div class="form-card form-box">
-                                            <h1 class="step-title text-bold text-primary fs-4 mb-5 mt-4"> Meeting Appointment </h1>
+                                            <div class="mb-5" editable="rich">
+                                                <h2 class="special-title text-left fs-4 text-dark">MEETING <span class="text-primary">APPOINTMENT</span></h2>
+                                            </div>
                                             <div class="row mb-4">
                                                 <div class="col-md-12">
-                                                    <h5 class="text-bold text-uppercase fs-8 mb-4">Duration</h5>
+                                                    <h5 class="text-uppercase fs-6 text-dark mb-4">Duration</h5>
                                                 </div>
                                                 <div class="col-md-6 mb-3">
-                                                    <div class="input-group align-items-center">
+                                                    <div class="input-group align-items-center calendar relative">
                                                         <input name="start_date" type="text" id="start_date" class="form-control" validates="required" required="">
                                                         <label for="start_date">Start Date</label>
                                                         <i class="validate"></i>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6 mb-3">
-                                                    <div class="input-group align-items-center">
+                                                    <div class="input-group align-items-center calendar relative">
                                                         <input name="end_date" type="text" id="end_date" class="form-control" validates="required" required="">
                                                         <label for="end_date">End Date</label>
                                                         <i class="validate"></i>
@@ -92,7 +96,109 @@
                                                 </div>
                                                 <div class="clearfix mt-3"></div>
                                                 <div class="col-md-12">
-                                                    <h5 class="text-bold text-uppercase fs-8 mb-4">Meeting Location</h5>
+                                                    <h5 class="text-uppercase fs-6 text-dark mb-4">Meeting Time</h5>
+                                                </div>
+                                                <div class="col-md-4 mb-3">
+                                                   <!--  <div class="input-group align-items-center">
+                                                        <input name="address" type="time" id="address" class="form-control" validates="required" required="">
+                                                        <span class="iconify" data-icon="dashicons:clock"></span>
+                                                        <label for="address">Time</label>
+                                                        <i class="validate"></i>
+                                                    </div> -->
+                                                    <div class="f-province input-group align-items-center provinces selectbox selectmeeting_time custom">
+                                                        <input type="hidden" name="meeting_time" value="">
+                                                        <select id="meeting_time" class="form-control icon_clock">
+                                                            <option> -- Select -- </option>
+                                                            <option>00:00</option>
+                                                            <option>00:15</option>
+                                                            <option>00:30</option>
+                                                            <option>00:45</option>
+                                                            <option>01:00</option>
+                                                            <option>01:15</option>
+                                                            <option>01:30</option>
+                                                            <option>01:45</option>
+                                                            <option>02:00</option>
+                                                            <option>02:15</option>
+                                                            <option>02:30</option>
+                                                            <option>02:45</option>
+                                                            <option>03:00</option>
+                                                            <option>03:15</option>
+                                                            <option>03:30</option>
+                                                            <option>03:45</option>
+                                                            <option>04:00</option>
+                                                            <option>04:15</option>
+                                                            <option>04:30</option>
+                                                            <option>04:45</option>
+                                                            <option>05:00</option>
+                                                            <option>05:15</option>
+                                                            <option>05:30</option>
+                                                            <option>05:45</option>
+                                                            <option>06:00</option>
+                                                            <option>06:15</option>
+                                                            <option>06:30</option>
+                                                            <option>06:45</option>
+                                                            <option>07:00</option>
+                                                            <option>07:15</option>
+                                                            <option>07:30</option>
+                                                            <option>07:45</option>
+                                                            <option>08:00</option>
+                                                            <option>08:15</option>
+                                                            <option>08:30</option>
+                                                            <option>08:45</option>
+                                                            <option>09:00</option>
+                                                            <option>09:15</option>
+                                                            <option>09:30</option>
+                                                            <option>09:45</option>
+                                                            <option>10:00</option>
+                                                            <option>10:15</option>
+                                                            <option>10:30</option>
+                                                            <option>10:45</option>
+                                                            <option>11:00</option>
+                                                            <option>11:15</option>
+                                                            <option>11:30</option>
+                                                            <option>11:45</option>
+                                                            <option>12:00</option>
+                                                            <option>12:15</option>
+                                                            <option>12:30</option>
+                                                            <option>12:45</option>
+                                                            <option>13:00</option>
+                                                            <option>13:15</option>
+                                                            <option>13:30</option>
+                                                            <option>13:45</option>
+                                                            <option>14:00</option>
+                                                            <option>14:15</option>
+                                                            <option>14:30</option>
+                                                            <option>14:45</option>
+                                                            <option>15:00</option>
+                                                            <option>15:15</option>
+                                                            <option>15:30</option>
+                                                            <option>15:45</option>
+                                                            <option>16:00</option>
+                                                            <option>16:15</option>
+                                                            <option>16:30</option>
+                                                            <option>16:45</option>
+                                                            <option>17:00</option>
+                                                            <option>17:15</option>
+                                                            <option>17:30</option>
+                                                            <option>17:45</option>
+                                                            <option>18:00</option>
+                                                            <option>18:15</option>
+                                                            <option>18:30</option>
+                                                            <option>18:45</option>
+                                                            <option>19:00</option>
+                                                            <option>19:15</option>
+                                                            <option>19:30</option>
+                                                            <option>19:45</option>
+                                                            <option>20:00</option>
+                                                        </select>
+                                                        <label for="meeting_time">Time</label>
+                                                        <i class="validate"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8"></div>
+                                                <div class="clearfix mt-3"></div>
+                                                <div class="col-md-12">
+                                                    <h5 class="text-uppercase fs-6 text-dark mb-4">Meeting Location</h5>
                                                 </div>
                                                 <div class="col-md-12 mb-3">
                                                     <div class="input-group align-items-center">
@@ -127,22 +233,20 @@
                                                         <i class="validate"></i>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-12">
-                                                    <div class="pb-3" lc-helper="gmap-embed">
+                                                <div class="col-md-12 mb-3">
+                                                    <div class="mapline" lc-helper="gmap-embed">
                                                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3875.6647443463908!2d100.5592540929188!3d13.73873605017498!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x524dad67eb707a4b!2sThe%20Trendy%20Office%20Building!5e0!3m2!1sen!2sth!4v1646302645610!5m2!1sen!2sth" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                                                     </div>
                                                 </div>
-                                                <div class="clearfix mt-3"></div>
-                                                <div class="col-md-12">
-                                                    <h5 class="text-bold text-uppercase fs-8 mb-4">Meeting Time</h5>
-                                                </div>
                                                 <div class="col-md-12 mb-3">
                                                     <div class="input-group align-items-center">
-                                                        <input name="address" type="time" id="address" class="form-control" validates="required" required="">
-                                                        <label for="address">Time</label>
+                                                        <input name="search_location" type="text" id="search_location" class="form-control" validates="required" required="">
+                                                        <label for="search_location">Search for Location</label>
                                                         <i class="validate"></i>
                                                     </div>
                                                 </div>
+                                                <div class="clearfix mt-3"></div>
+                                                
                                             </div>
                                         </div>
 
@@ -152,14 +256,16 @@
                                     <!--- Step 2 --->
                                     <fieldset id="destination">
                                         <div class="form-card form-box">
-                                            <h1 class="step-title text-bold text-primary fs-4 mb-5 mt-4"> Are we going to Travel to other places</h1>
+                                            <div class="mb-5" editable="rich">
+                                                <h2 class="special-title text-left fs-4 text-dark">ARE WE GOING TO TRAVEL <span class="text-primary">TO OTHER PLACE</span></h2>
+                                            </div>
                                             <div class="row choose-box">
 												<div class="col-md-12 mb-3">
 													<ul>
 														<li class="col-md-6">
 															<label>
 																<input type="radio" name="type" value="no" required="required">
-																<div class="icon-box">
+																<div class="icon-box" id="btn_no_destination">
 																	<h5>No, I would like to go around assigned location.</h5>
 																</div>
 															</label>
@@ -167,7 +273,7 @@
 														<li class="col-md-6">
 															<label>
 																<input type="radio" name="type" value="yes" required="required">
-																<div class="icon-box">
+																<div class="icon-box" id="btn_yes_destination">
 																	<h5>Yes, I would like to go to other locations. </h5>
 																</div>
 															</label>
@@ -175,11 +281,208 @@
 													</ul>
 												</div>
 											</div>
-                                        </div>
+                                            <div id="yes_destination_box">
+                                                <div class="row">
+                                                    <div class="col-md-12 mb-3">
+                                                        <div class="pb-3" lc-helper="gmap-embed">
+                                                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3875.6647443463908!2d100.5592540929188!3d13.73873605017498!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x524dad67eb707a4b!2sThe%20Trendy%20Office%20Building!5e0!3m2!1sen!2sth!4v1646302645610!5m2!1sen!2sth" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 mb-3">
+                                                        <div class="tab_locations">
+                                                            <h5 class="text-uppercase fs-6 text-dark mb-4">Meeting Location</h5>
+                                                            <ul>
+                                                                <li class="active">
+                                                                    <div class="d_locations">
+                                                                        <div class="location_title">BTS Thonglor</div>
+                                                                        <div class="location_time">11 DEC 2022 <span class="badge_time">07:20</span></div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="inactive">
+                                                                    <div class="d_locations">
+                                                                        <div class="location_title">BTS Thonglor</div>
+                                                                        <div class="location_time">11 DEC 2022 <span class="badge_time">07:20</span></div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="destination_forms">
+                                                    <div class="destination_forms_box">
+                                                        <div class="row">
+                                                            <div class="col-md-12 mt-4">
+                                                                <h5 class="text-uppercase fs-6 text-dark mb-4">Destination</h5>
+                                                            </div>
+                                                            <div class="col-md-12 mb-3">
+                                                                <div class="input-group align-items-center">
+                                                                    <input name="search_location" type="text" id="search_location" class="form-control" validates="required" required="">
+                                                                    <label for="search_location">Search for Location</label>
+                                                                    <i class="validate"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 mb-3">
+                                                                <div class="input-group align-items-center selectbox custom">
+                                                                    <input type="hidden" name="country" value="">
+                                                                    <select id="country" class="form-control">
+                                                                    </select>
+                                                                    <label for="country">Country</label>
+                                                                    <i class="validate"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-8 mb-3">
+                                                                <div class="input-group align-items-center">
+                                                                    <input name="address" type="text" class="form-control" validates="required" required="">
+                                                                    <label for="address">Address</label>
+                                                                    <i class="validate"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 mb-3">
+                                                                <div class="input-group align-items-center selectbox custom">
+                                                                    <input type="hidden" name="province" value="">
+                                                                    <select id="province" class="form-control">
+                                                                    </select>
+                                                                    <label for="province">Province</label>
+                                                                    <i class="validate"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 mb-3">
+                                                                <div class="input-group align-items-center selectbox custom">
+                                                                    <input type="hidden" name="district" value="">
+                                                                    <select id="district" class="form-control">
+                                                                    </select>
+                                                                    <label for="district">District</label>
+                                                                    <i class="validate"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 mb-3">
+                                                                <div class="input-group align-items-center selectbox custom">
+                                                                    <input type="hidden" name="district" value="">
+                                                                    <select id="district" class="form-control">
+                                                                    </select>
+                                                                    <label for="district">District</label>
+                                                                    <i class="validate"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12 mt-4">
+                                                                <h5 class="text-uppercase fs-6 text-dark mb-3">Meeting Time</h5>
+                                                            </div>
+                                                            <div class="col-md-4 mb-3 yes_radiobox">
+                                                                <label class="form_radio">
+                                                                    <input type="radio" id="yes_specify" name="light">
+                                                                    <span class="design"></span>
+                                                                    <span class="text">I Can Specified Time</span>
+                                                                </label>
+                                                                <div class="show_specify_time">
+                                                                    <div class="f-province input-group align-items-center provinces selectbox selectmeeting_time custom">
+                                                                        <input type="hidden" name="meeting_time" value="">
+                                                                        <select id="meeting_time" class="form-control icon_clock">
+                                                                            <option> -- Select -- </option>
+                                                                            <option>00:00</option>
+                                                                            <option>00:15</option>
+                                                                            <option>00:30</option>
+                                                                            <option>00:45</option>
+                                                                            <option>01:00</option>
+                                                                            <option>01:15</option>
+                                                                            <option>01:30</option>
+                                                                            <option>01:45</option>
+                                                                            <option>02:00</option>
+                                                                            <option>02:15</option>
+                                                                            <option>02:30</option>
+                                                                            <option>02:45</option>
+                                                                            <option>03:00</option>
+                                                                            <option>03:15</option>
+                                                                            <option>03:30</option>
+                                                                            <option>03:45</option>
+                                                                            <option>04:00</option>
+                                                                            <option>04:15</option>
+                                                                            <option>04:30</option>
+                                                                            <option>04:45</option>
+                                                                            <option>05:00</option>
+                                                                            <option>05:15</option>
+                                                                            <option>05:30</option>
+                                                                            <option>05:45</option>
+                                                                            <option>06:00</option>
+                                                                            <option>06:15</option>
+                                                                            <option>06:30</option>
+                                                                            <option>06:45</option>
+                                                                            <option>07:00</option>
+                                                                            <option>07:15</option>
+                                                                            <option>07:30</option>
+                                                                            <option>07:45</option>
+                                                                            <option>08:00</option>
+                                                                            <option>08:15</option>
+                                                                            <option>08:30</option>
+                                                                            <option>08:45</option>
+                                                                            <option>09:00</option>
+                                                                            <option>09:15</option>
+                                                                            <option>09:30</option>
+                                                                            <option>09:45</option>
+                                                                            <option>10:00</option>
+                                                                            <option>10:15</option>
+                                                                            <option>10:30</option>
+                                                                            <option>10:45</option>
+                                                                            <option>11:00</option>
+                                                                            <option>11:15</option>
+                                                                            <option>11:30</option>
+                                                                            <option>11:45</option>
+                                                                            <option>12:00</option>
+                                                                            <option>12:15</option>
+                                                                            <option>12:30</option>
+                                                                            <option>12:45</option>
+                                                                            <option>13:00</option>
+                                                                            <option>13:15</option>
+                                                                            <option>13:30</option>
+                                                                            <option>13:45</option>
+                                                                            <option>14:00</option>
+                                                                            <option>14:15</option>
+                                                                            <option>14:30</option>
+                                                                            <option>14:45</option>
+                                                                            <option>15:00</option>
+                                                                            <option>15:15</option>
+                                                                            <option>15:30</option>
+                                                                            <option>15:45</option>
+                                                                            <option>16:00</option>
+                                                                            <option>16:15</option>
+                                                                            <option>16:30</option>
+                                                                            <option>16:45</option>
+                                                                            <option>17:00</option>
+                                                                            <option>17:15</option>
+                                                                            <option>17:30</option>
+                                                                            <option>17:45</option>
+                                                                            <option>18:00</option>
+                                                                            <option>18:15</option>
+                                                                            <option>18:30</option>
+                                                                            <option>18:45</option>
+                                                                            <option>19:00</option>
+                                                                            <option>19:15</option>
+                                                                            <option>19:30</option>
+                                                                            <option>19:45</option>
+                                                                            <option>20:00</option>
+                                                                        </select>
+                                                                        <label for="meeting_time">Time</label>
+                                                                        <i class="validate"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 mb-3">
+                                                                <label class="form_radio">
+                                                                    <input type="radio" id="no_specify" name="light">
+                                                                    <span class="design"></span>
+                                                                    <span class="text">I Cannot Specified Time</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
 
+                                            </div>
+                                        </div>
                                         <input type="button" name="next" class="btn next action-button step2_btn_position" value="Next">
                                         <input type="button" name="previous" class="btn previous action-button-previous step2_btn_position" value="Previous">
+                                        <input type="button" name="next" class="btn btn_addlocation" value="+ Add location">
                                     </fieldset>
+                                  
                                 </form>
                             </div>
                         </div>
@@ -189,10 +492,10 @@
         </main>
     </main>
     <footer id="footer-template"></footer>
-    <script src="assets/js/angular.min.js"></script>
-    <script src="components.js"></script>
-    <script src="app.js"></script>
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/font-awesome-5-pro.js"></script>
+    <script src="assets/js/picker.js"></script>
+    <script src="assets/js/picker.date.js"></script>
     <script src="assets/js/intlTelInput.js"></script>
     <script src="assets/js/validate.js"></script>
     <script src="assets/js/custom.js"></script>

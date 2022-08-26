@@ -25,6 +25,102 @@ $(document).ready(function () {
   });
 
 /* --------------------------------------------------
+	  Destination - opening tab inside destination page
+  -------------------------------------------------- */
+
+$(document).ready(function () {
+	var i = 1;
+	$('#btn_yes_destination').click(function() {
+		$(this).addClass("active");
+		$("#yes_destination_box").show(100);
+		$('.btn_addlocation').show();
+	});
+	$('#btn_no_destination').click(function() {
+		$('#btn_yes_destination').removeClass("active");
+		$("#yes_destination_box").hide(100);
+		$('.btn_addlocation').hide();
+	});
+	var fun = function() {
+		$('.tab_locations ul li.inactive').clone().appendTo( ".tab_locations ul" );
+		$('.destination_forms_box').clone().appendTo( ".destination_forms" );
+		$('.tab_locations ul li').next().addClass("active");
+		$('.tab_locations ul li').prev().removeClass("inactive");
+		$('.tab_locations ul li:last').addClass("inactive");
+		$('.tab_locations ul li:last').removeClass("active");
+		// $('.d_destination_forms'+ i++).show();
+
+
+		if ($('.tab_locations ul li').length == 3) {
+			$('.tab_locations ul li').css("width","33%");
+		}
+		else if ($('.tab_locations ul li').length == 4) {
+			$('.tab_locations ul li').css("width","24.7%");
+			$('.tab_locations ul li:nth-child(3)').addClass("thirdtab");
+			$('.tab_locations ul li:nth-child(2)').addClass("secondtab");
+			$('.tab_locations ul li:first-child .d_locations').css("left","-7vh");
+		}
+		else if ($('.tab_locations ul li').length == 5) {
+			$('.tab_locations ul li').css("width","19.7%");
+			$('.tab_locations ul li:nth-child(4)').addClass("fourthtab");
+			$('.tab_locations ul li:nth-child(5)').addClass("fifthtab");
+		}
+
+		if (i++ == 8) {
+			$('.btn_addlocation').off('click', fun);
+		}	
+	};
+
+	$(".btn_addlocation").on('click', fun);
+
+	$('.form_radio input').click(function() {
+       if($(this).attr('id') == 'yes_specify') {
+       		$(this).parent().siblings($('.show_specify_time')).show(200);     
+       }
+       else {
+            $(this).parent().parent().siblings('.yes_radiobox').children('.show_specify_time').hide(200);   
+       }
+   });
+
+  });
+
+	$(function() {
+
+	  var from_$input = $('#start_date').pickadate(),
+	    from_picker = from_$input.pickadate('picker')
+
+	  var to_$input = $('#end_date').pickadate(),
+	    to_picker = to_$input.pickadate('picker')
+
+
+	  // Check if there’s a “from” or “to” date to start with.
+	  if ( from_picker.get('value') ) {
+	    to_picker.set('min', from_picker.get('select'))
+	  }
+	  if ( to_picker.get('value') ) {
+	    from_picker.set('max', to_picker.get('select'))
+	  }
+
+	  // When something is selected, update the “from” and “to” limits.
+	  from_picker.on('set', function(event) {
+	    if ( event.select ) {
+	      to_picker.set('min', from_picker.get('select'))    
+	    }
+	    else if ( 'clear' in event ) {
+	      to_picker.set('min', false)
+	    }
+	  })
+	  to_picker.on('set', function(event) {
+	    if ( event.select ) {
+	      from_picker.set('max', to_picker.get('select'))
+	    }
+	    else if ( 'clear' in event ) {
+	      from_picker.set('max', false)
+	    }
+	  })
+
+	});
+
+/* --------------------------------------------------
 	Form Steps
 -------------------------------------------------- */
 

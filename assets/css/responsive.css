@@ -1,0 +1,217 @@
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    input.btn.previous.action-button-previous.step2_btn_position.custom_posision_p1 {
+        position: absolute;
+        bottom: 2% !important;
+        left: 19% !important;
+    }
+    .text-primary-low .text-primary {
+        font-size: 25px !important;
+    }
+    .tab_locations2 ul::before {
+        height: 53%;
+        left: 8px;
+        top: 17%;
+    }
+    
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .befor-after-border::after {
+        width: 35%;
+    }
+    .befor-after-border::before {
+        width: 35%;
+    }
+    .choose-box ul li {
+        width: 48.2% !important;
+    }
+    input.btn.next.action-button.step2_btn_position.custom_posision_n1 {
+        position: absolute;
+        left: 32.5% !important;
+        bottom: 2% !important;
+    }
+    input.btn.previous.action-button-previous.step2_btn_position.custom_posision_p1 {
+        position: absolute;
+        bottom: 2% !important;
+        left: 20% !important;
+    }
+    .col-lg-6.card-left-padding {
+        margin: 0 !important;
+    }
+    .card-right-padding {
+        padding-right: 6% !important;
+    }
+    .forbodyguard .card-bottom-padding {
+        padding-right: 6% !important;
+    }
+    .row.bigpadding-bottom {
+        padding-bottom: 70% !important;
+      }
+      .tab_locations2 ul::before {
+        height: 56% !important;
+        left: 8px;
+        top: 18% !important;
+    }
+    
+
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .befor-after-border::after {
+        width: 30%;
+    }
+    .befor-after-border::before {
+        width: 30%;
+    }
+    .tab_locations2 ul::before {
+        height: 25% ;
+        left: 8px;
+        top: 8% ;
+    }
+    
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .befor-after-border::after {
+        width: 30%;
+    }
+    .befor-after-border::before {
+        width: 30%;
+    }
+    .choose-box ul li {
+        width: 100%;
+    }
+    .sername .col-md-4 {
+        width: 30%;
+    }
+    .sername .col-md-3 {
+        width: 30%;
+    }
+    .sername .col-md-8 {
+        width: 70%;
+    }
+    .sername .col-md-9 {
+        width: 70%;
+    }
+    .card-right-padding {
+        padding-right: 0px;
+    }
+    .col-lg-6.card-left-padding {
+        margin: 50px 0;
+    }
+    input.btn.next.action-button.step2_btn_position.custom_posision_n1 {
+        position: absolute;
+        left: 85%;
+        bottom: 0%;
+    }
+    input.btn.previous.action-button-previous.step2_btn_position.custom_posision_p1 {
+        position: absolute;
+        bottom: 0%;
+        left: 63%;
+    }
+    .text-primary-low .text-primary {
+        font-size: 21px;
+    }
+
+    .btn.toggole-btn.col-md-12 {
+        padding: 0;
+    }
+    .col-md-12.accomodation {
+        padding: 0;
+    }
+    .row.bigpadding-bottom {
+        padding-bottom: 0%;
+    }
+    .col-md-12.text-primary-low {
+        padding: 0;
+    }
+    .tab_locations2 ul::before {
+        height: 30%;
+        left: 8px;
+        top: 8%;
+    }
+    .forbodyguard .card-bottom-padding {
+        padding-right: 0px;
+        padding-bottom: 7%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .befor-after-border::after {
+        width: 30%;
+    }
+    .befor-after-border::before {
+        width: 30%;
+    }
+    .sername .col-md-4 {
+        width: 30%;
+    }
+    .sername .col-md-3 {
+        width: 30%;
+    }
+    .sername .col-md-8 {
+        width: 70%;
+    }
+    .sername .col-md-9 {
+        width: 70%;
+    }
+    .card-right-padding {
+        padding-right: 0px;
+    }
+    .col-lg-6.card-left-padding {
+        margin: 50px 0;
+    }
+    input.btn.next.action-button.step2_btn_position.custom_posision_n1 {
+        position: absolute;
+        left: 76%;
+        bottom: 0%;
+    }
+    input.btn.previous.action-button-previous.step2_btn_position.custom_posision_p1 {
+        position: absolute;
+        bottom: 0%;
+        left: 53%;
+    }
+    .text-primary-low .text-primary {
+        font-size: 21px;
+        width: 284px;
+    }
+
+    .btn.toggole-btn.col-md-12 {
+        padding: 0;
+    }
+    .col-md-12.accomodation {
+        padding: 0;
+    }
+    .row.bigpadding-bottom {
+        padding-bottom: 70%;
+    }
+    .col-md-12.text-primary-low {
+        padding: 0;
+    }
+    .card-bottom-padding {
+        padding-right: 3% !important;
+        padding-bottom: 7%;
+    }
+    .tab_locations2 ul::before {
+        height: 33%;
+        left: 8px;
+        top: 6%;
+    }
+
+    .col-lg-6.card-left-margin {
+        padding: 0px 50px;
+    }
+    .forbodyguard .card-bottom-padding {
+        padding-right: 0px;
+        padding-bottom: 7%;
+    }
+
+}
+
+
+
+
+
+
+

@@ -91,13 +91,64 @@ app.controller("questions_ctrl", function($scope, $http, $timeout, $rootScope, c
   $scope.bloodsickness = 'no';
   $scope.medicalneed = 'no';
 
+      $(document).ready(function () {
+          var input = document.querySelector("#question4_phone");
+          window.intlTelInput(input, ({
+          preferredCountries: ["th"],
+          separateDialCode: true,
+          autoPlaceholder: false,
+          autoHideDialCode: true,
+          utilsScript: "https://dev.trueprotection.co.th/wp-content/themes/picostrap5-child-base/custom/intlTelInput/utils.js",
+          }));
+          var country_code = $('.question4_phone .iti__selected-dial-code').text();
+          $("#question4_phone_dialcode").val(country_code);
+          input.addEventListener("countrychange",function() {
+          var country_code = $('.question4_phone .iti__selected-dial-code').text();
+          $("#question4_phone_dialcode").val(country_code);
+          });
+      });
+
   /*
   |--------------------------------------------------------------------------
   | Choice 5
   |--------------------------------------------------------------------------
   */
   
-  $scope.howmuch_people_need_protection = '2';
+  $scope.howmuch_people_need_protection = 1;
+  $scope.question5_total_person = [0];
+  $scope.question5_healthissue = 'no';
+  $scope.question5_blood = 'no';
+
+  $scope.question5_person = function () {
+    var person_arr = [];
+    var person_no = $scope.howmuch_people_need_protection;
+    if (person_no <= 10) {
+      for (var i = 0; i < person_no; i++) {
+        person_arr.push(i);
+      }
+      $scope.question5_total_person = person_arr;
+    }
+    console.log($scope.question5_total_person)
+  }
+
+  
+
+  $(document).ready(function () {
+    var input = document.querySelector("#question5_phone");
+    window.intlTelInput(input, ({
+    preferredCountries: ["th"],
+    separateDialCode: true,
+    autoPlaceholder: false,
+    autoHideDialCode: true,
+    utilsScript: "https://dev.trueprotection.co.th/wp-content/themes/picostrap5-child-base/custom/intlTelInput/utils.js",
+    }));
+    var country_code = $('.question5_phone .iti__selected-dial-code').text();
+    $("#question5_phone_dialcode").val(country_code);
+    input.addEventListener("countrychange",function() {
+    var country_code = $('.question5_phone .iti__selected-dial-code').text();
+    $("#question5_phone_dialcode").val(country_code);
+    });
+  });
 
 
 });

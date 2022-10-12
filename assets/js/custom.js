@@ -66,79 +66,85 @@ $( document ).ready(function() {
 	});
 });
 
+
+/* --------------------------------------------------
+	Phone Format
+  -------------------------------------------------- */
+
+$(document).ready(function () {
+	$("input[name='phone_number']").keyup(function () {
+		$(this).val($(this).val().replace(/^(\d{3})(\d{3})(\d+)$/, "$1 $2 $3"));
+	});
+});
+
+
+
 /* --------------------------------------------------
 	  Destination - opening tab inside destination page
   -------------------------------------------------- */
+ 
+// var langArray = [];
+// $('.vodiapicker option').each(function () {
+// 	var img = $(this).attr("data-thumbnail");
+// 	var text = this.innerText;
+// 	var value = $(this).val();
+// 	var item = '<li><img src="' + img + '" alt="" value="' + value + '"/><span>' + text + '</span></li>';
+// 	langArray.push(item);
+// })
 
-//test for iterating over child elements
-var langArray = [];
-$('.vodiapicker option').each(function () {
-	var img = $(this).attr("data-thumbnail");
-	var text = this.innerText;
-	var value = $(this).val();
-	var item = '<li><img src="' + img + '" alt="" value="' + value + '"/><span>' + text + '</span></li>';
-	langArray.push(item);
-})
+// $('#a').html(langArray);
+ 
+// $('.btn-select').html(langArray[0]);
+// $('.btn-select').attr('value', 'en');
+ 
+// $('#a li').click(function () {
+// 	var img = $(this).find('img').attr("src");
+// 	var value = $(this).find('img').attr('value');
+// 	var text = this.innerText;
+// 	var item = '<li><img src="' + img + '" alt="" /><span>' + text + '</span></li>';
+// 	$('.btn-select').html(item);
+// 	$('.btn-select').attr('value', value);
+// 	$(".b").toggle(); 
+// });
 
-$('#a').html(langArray);
+// $(".btn-select").click(function () {
+// 	$(".b").toggle();
+// });
+ 
+// var sessionLang = localStorage.getItem('lang');
+// if (sessionLang) { 
+// 	var langIndex = langArray.indexOf(sessionLang);
+// 	$('.btn-select').html(langArray[langIndex]);
+// 	$('.btn-select').attr('value', sessionLang);
+// } else {
+// 	var langIndex = langArray.indexOf('ch');
+// 	console.log(langIndex);
+// 	$('.btn-select').html(langArray[langIndex]); 
+// }
 
-//Set the button value to the first el of the array
-$('.btn-select').html(langArray[0]);
-$('.btn-select').attr('value', 'en');
-
-//change button stuff on click
-$('#a li').click(function () {
-	var img = $(this).find('img').attr("src");
-	var value = $(this).find('img').attr('value');
-	var text = this.innerText;
-	var item = '<li><img src="' + img + '" alt="" /><span>' + text + '</span></li>';
-	$('.btn-select').html(item);
-	$('.btn-select').attr('value', value);
-	$(".b").toggle();
-	//console.log(value);
-});
-
-$(".btn-select").click(function () {
-	$(".b").toggle();
-});
-
-//check local storage for the lang
-var sessionLang = localStorage.getItem('lang');
-if (sessionLang) {
-	//find an item with value of sessionLang
-	var langIndex = langArray.indexOf(sessionLang);
-	$('.btn-select').html(langArray[langIndex]);
-	$('.btn-select').attr('value', sessionLang);
-} else {
-	var langIndex = langArray.indexOf('ch');
-	console.log(langIndex);
-	$('.btn-select').html(langArray[langIndex]);
-	//$('.btn-select').attr('value', 'en');
-}
-
-$(document).ready(function () {
-	$(".progress-bar").animate({
-		width: "100%",
-	}, 5500);
-	var progresshide = $('progress-bar-success').style.width = '100%';
-	if (progresshide) {
-		$('mail_sending').hide()
-	}
-});
+// $(document).ready(function () {
+// 	$(".progress-bar").animate({
+// 		width: "100%",
+// 	}, 5500);
+// 	var progresshide = $('progress-bar-success').style.width = '100%';
+// 	if (progresshide) {
+// 		$('mail_sending').hide()
+// 	}
+// });
 
 
-$(document).ready(function () {
+// $(document).ready(function () {
 
-	$('.form_radio input').click(function () {
-		if ($(this).attr('id') == 'yes_specify') {
-			$(this).parent().siblings($('.show_specify_time')).show(200);
-		}
-		else {
-			$(this).parent().parent().siblings('.yes_radiobox').children('.show_specify_time').hide(200);
-		}
-	});
+// 	$('.form_radio input').click(function () {
+// 		if ($(this).attr('id') == 'yes_specify') {
+// 			$(this).parent().siblings($('.show_specify_time')).show(200);
+// 		}
+// 		else {
+// 			$(this).parent().parent().siblings('.yes_radiobox').children('.show_specify_time').hide(200);
+// 		}
+// 	});
 
-});
+// });
 
 /* --------------------------------------------------
 	  Destination - opening tab inside destination page 2
@@ -176,12 +182,8 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 
-
 	$('#form-page').show();
 	$('#thankyou-page').hide();
-
-
-
 
 	var api_baseurl = "https://dev-api.trueprotection.co.th/api/agency";
 	var current_fs, next_fs, previous_fs;
@@ -213,9 +215,7 @@ $(document).ready(function () {
 			}
 			if (!i.value) { allAreFilled = false; return; }
 		})
-
-
-
+		
 		if (!allAreFilled) { // if (!allAreFilled) {
 
 			var formData = $("#register").serializeArray();
@@ -351,30 +351,6 @@ $("#next_step_1").click(function () {
 		$('#tax_id').text("Company Registration Number");
 		$('.company_type').show();
 	}
-});
-
-$(document).ready(function () {
-	var input = document.querySelector("#company_phone");
-	window.intlTelInput(input, ({
-		preferredCountries: ["th"],
-		separateDialCode: true,
-		autoPlaceholder: false,
-		autoHideDialCode: true,
-		utilsScript: "intlTelInput.js",
-	}));
-	var country_code = $('.f-phone .iti__selected-dial-code').text();
-	$("#country_code_company_phone").val(country_code);
-	input.addEventListener("countrychange", function () {
-		var country_code = $('.f-phone .iti__selected-dial-code').text();
-		$("#country_code_company_phone").val(country_code);
-	});
-});
-
-//Phone format
-$(document).ready(function () {
-	$("input[name='phone_number']").keyup(function () {
-		$(this).val($(this).val().replace(/^(\d{3})(\d{3})(\d+)$/, "$1 $2 $3"));
-	});
 });
 
 
@@ -1007,17 +983,17 @@ $('.not-require').keyup(function () {
 	  data import
   -------------------------------------------------- */
 
-function update() {
-	var select = document.getElementById('fruitSelector');
-	var option = select.options[select.selectedIndex];
-	document.getElementById('fruitSelector1').value = option.text;
+// function update() {
+// 	var select = document.getElementById('fruitSelector');
+// 	var option = select.options[select.selectedIndex];
+// 	document.getElementById('fruitSelector1').value = option.text;
 
-	var select1 = document.getElementById('country_code');
-	var option1 = select1.options[select1.selectedIndex];
-	document.getElementById('con_code').value = option1.text;
-}
+// 	var select1 = document.getElementById('country_code');
+// 	var option1 = select1.options[select1.selectedIndex];
+// 	document.getElementById('con_code').value = option1.text;
+// }
 
-update();
+// update();
 
 // function person() {
 
@@ -1043,29 +1019,29 @@ update();
 // }
 
 // THIS CONSTANT REPRESENTS THE <select> ELEMENT
-const theSelect = document.getElementById('fruitSelector')
-theSelect.addEventListener('input', function () {
+// const theSelect = document.getElementById('fruitSelector')
+// theSelect.addEventListener('input', function () {
 
-	let selectedOptText = theSelect.options[theSelect.selectedIndex].text
-	document.querySelector('.hiddenField').value = selectedOptText;
+// 	let selectedOptText = theSelect.options[theSelect.selectedIndex].text
+// 	document.querySelector('.hiddenField').value = selectedOptText;
 
-})
-function updateTextInput(val) {
-	document.getElementById('textInput').innerHTML = val;
-}
+// })
+// function updateTextInput(val) {
+// 	document.getElementById('textInput').innerHTML = val;
+// }
 
-function myFunction_l(event) {
-	document.getElementById("le_redio").innerHTML = event.target.value;
+// function myFunction_l(event) {
+// 	document.getElementById("le_redio").innerHTML = event.target.value;
 
-}
+// }
 
-function myFunction_p(event) {
-	document.getElementById("p_redio").innerHTML = event.target.value;
-}
-function myFunction_fm(event) {
-	document.getElementById("fm_redio").innerHTML = event.target.value;
-}
-function myFunction_yn(event) {
-	document.getElementById("yn_redio").innerHTML = event.target.value;
-}
+// function myFunction_p(event) {
+// 	document.getElementById("p_redio").innerHTML = event.target.value;
+// }
+// function myFunction_fm(event) {
+// 	document.getElementById("fm_redio").innerHTML = event.target.value;
+// }
+// function myFunction_yn(event) {
+// 	document.getElementById("yn_redio").innerHTML = event.target.value;
+// }
 
